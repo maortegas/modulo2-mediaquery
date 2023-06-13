@@ -1,0 +1,1 @@
+# La resolucion utilizada para el desarrollo fue de 1512x982, pero fue optimizada para 1366 x 768 

@@ -4,10 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e5cd8d0512.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>MediaQuery</title>
 </head>
 <body>
-    
+    <div class="conteiner">
+        <nav class="nav">
+            <div class="nav_conteiner">
+                <div class="nav_conteiner_iconos">                
+                    <i class="fa-solid fa-car-on"> </i>
+                    <p>Electric Car</p>
+                </div>
+                <div class="nav_conteiner_menu">                
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <filter class="filter">
+            <div class="filter_container">
+                <div>
+                    <p>Ordenar po:r</p>
+                </div>
+                <div>
+                    <select name="opcion">
+                        <option value="Precio">Precio</option>
+                        <option value="Recom">Recomendado</option>
+                        <option value="Alfa">Menor a Mayor</option>
+                    </select>
+                </div>
+            </div>
+        </filter>
+        <main class="main">
+            <div class="main_item_card">
+                <img class="main_item_card_img" src="./assets/img/switch.jpeg" alt="Play5"/>
+                <p class="main_item_card_texto_producto">Play Station 5</p> 
+                <p class="main_item_card_texto_precio">$600.000</p>
+                <input class="main_item_card_texto_boton" type="button" value="Comprar" >                    
+            </div>
+        </main>
+        <page class="page" >
+
+        </page> 
+        <footer class="footer">
+
+        </footer>
+    </div>
 </body>
 </html>
