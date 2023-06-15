@@ -7,83 +7,102 @@
     <script src="https://kit.fontawesome.com/e5cd8d0512.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>MediaQuery</title>
 </head>
 <body>
     <div class="conteiner">
-        <nav class="nav">
-            <div class="nav_conteiner">
-                <div class="nav_conteiner_iconos">                
-                    <i class="fa-solid fa-car-on"> </i>
-                    <p>Electric Car</p>
-                </div>
-                <div class="nav_conteiner_menu">                
-                    <i class="fa-solid fa-bars"></i>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark nav align-items-xl-start">
+            <div class="container flex-lg-column">
+                <a class="navbar-brand flex-sm-row " href="#"> 
+                   <i class="fa-solid fa-car-on"> </i>
+                     Electric Car
+                </a>
+              <button class="navbar-toggler border border-white " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column">
+                  <li class="nav-item">
+                    <a class="nav-link active " aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Catálogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Ofertas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" >Contacto</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
+    </nav>  
         <filter class="filter">
             <div class="filter_container">
                 <div>
                     <p>Ordenar por:</p>
                 </div>
                 <div class="filter_container_opcion">
-                    <select name="opcion">
-                        <option value="Precio">Precio</option>
-                        <option value="Recom">Recomendado</option>
-                        <option value="Alfa">Menor a Mayor</option>
-                    </select>
+                    <select class="form-select form-select-sm mb-2 filter_select vw-100" aria-label="Default select example">
+                        <option selected>Precio</option>
+                        <option value="1">Recomendación</option>
+                        <option value="2">Menor Precio</option>
+                        <option value="3">Mayor Precio</option>
+                      </select>
                 </div>
             </div>
         </filter>
         <main class="main">
             <div class="main_item_card">
-                <img class="main_item_card_img" src="./assets/img/a1.jpeg" alt="Play5"/>
-                <p class="main_item_card_texto_producto">Play Station 5</p> 
+                <img class="main_item_card_img" src="./assets/img/a1.jpeg" alt="Modelo 1"/>
+                <p class="main_item_card_texto_producto">Modelo 1</p> 
                 <p class="main_item_card_texto_precio">$600.000</p>
                 <input class="main_item_card_texto_boton" type="button" value="Comprar" >                    
             </div>
             <div class="main_item_card">
-                <img class="main_item_card_img" src="./assets/img/a2.jpeg" alt="Play5"/>
-                <p class="main_item_card_texto_producto">Play Station 5</p> 
+                <img class="main_item_card_img" src="./assets/img/a2.jpeg" alt="Modelo 2"/>
+                <p class="main_item_card_texto_producto">Modelo 2</p> 
                 <p class="main_item_card_texto_precio">$600.000</p>
                 <input class="main_item_card_texto_boton" type="button" value="Comprar" >                    
             </div>
             <div class="main_item_card">
-                <img class="main_item_card_img" src="./assets/img/a3.jpeg" alt="Play5"/>
-                <p class="main_item_card_texto_producto">Play Station 5</p> 
+                <img class="main_item_card_img" src="./assets/img/a3.jpeg" alt="Modelo 3"/>
+                <p class="main_item_card_texto_producto">Modelo 3</p> 
                 <p class="main_item_card_texto_precio">$600.000</p>
                 <input class="main_item_card_texto_boton" type="button" value="Comprar" >                    
             </div>
             <div class="main_item_card">
-                <img class="main_item_card_img" src="./assets/img/a4.jpeg" alt="Play5"/>
-                <p class="main_item_card_texto_producto">Play Station 5</p> 
+                <img class="main_item_card_img" src="./assets/img/a4.jpeg" alt="Modelo 4"/>
+                <p class="main_item_card_texto_producto">Modelo 4</p> 
                 <p class="main_item_card_texto_precio">$600.000</p>
                 <input class="main_item_card_texto_boton" type="button" value="Comprar" >                    
             </div>
             <div class="main_item_card">
-                <img class="main_item_card_img" src="./assets/img/a5.jpeg" alt="Play5"/>
-                <p class="main_item_card_texto_producto">Play Station 5</p> 
+                <img class="main_item_card_img" src="./assets/img/a5.jpeg" alt="Modelo 5"/>
+                <p class="main_item_card_texto_producto">Modelo 5</p> 
                 <p class="main_item_card_texto_precio">$600.000</p>
                 <input class="main_item_card_texto_boton" type="button" value="Comprar" >                    
             </div>
             <div class="main_item_card">
-                <img class="main_item_card_img" src="./assets/img/a6.jpeg" alt="Play5"/>
-                <p class="main_item_card_texto_producto">Play Station 5</p> 
+                <img class="main_item_card_img" src="./assets/img/a6.jpeg" alt="Modelo 6"/>
+                <p class="main_item_card_texto_producto">Modelo 6</p> 
                 <p class="main_item_card_texto_precio">$600.000</p>
                 <input class="main_item_card_texto_boton" type="button" value="Comprar" >                    
             </div>
             <div class="main_item_card">
-                <img class="main_item_card_img" src="./assets/img/a7.jpeg" alt="Play5"/>
-                <p class="main_item_card_texto_producto">Play Station 5</p> 
+                <img class="main_item_card_img" src="./assets/img/a7.jpeg" alt="Modelo 7"/>
+                <p class="main_item_card_texto_producto">Modelo 7</p> 
                 <p class="main_item_card_texto_precio">$600.000</p>
                 <input class="main_item_card_texto_boton" type="button" value="Comprar" >                    
             </div>
             <div class="main_item_card">
-                <img class="main_item_card_img" src="./assets/img/a8.jpeg" alt="Play5"/>
-                <p class="main_item_card_texto_producto">Play Station 5</p> 
+                <img class="main_item_card_img" src="./assets/img/a8.jpeg" alt="Modelo 8"/>
+                <p class="main_item_card_texto_producto">Modelo 8</p> 
                 <p class="main_item_card_texto_precio">$600.000</p>
                 <input class="main_item_card_texto_boton" type="button" value="Comprar" >                    
             </div>
@@ -106,5 +125,6 @@
             <div class="footer_derechos">Todos los derechos reservados</div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
 </body>
 </html>
